@@ -286,12 +286,22 @@ body {
     height: 23.8em;
   }
 }
+@media (min-device-width: 1400px) {
+  .sidebar img {
+    height: 36em;
+  }
+}
 .sidebar img:nth-of-type(2) {
   height: 32em;
 }
 @media (min-device-width: 480px) and (max-device-width: 768px) {
   .sidebar img:nth-of-type(2) {
     height: 26em;
+  }
+}
+@media (min-device-width: 1400px) {
+  .sidebar img:nth-of-type(2) {
+    height: 46em;
   }
 }
 
@@ -330,6 +340,11 @@ body {
 @media (min-device-width: 1200px) and (max-device-width: 768px) {
   .polaroid {
     height: 12em;
+  }
+}
+@media (min-device-width: 1400px) {
+  .polaroid {
+    height: 16em;
   }
 }
 .polaroid .text-container {
@@ -404,6 +419,11 @@ body {
 @media (min-device-width: 1200px) and (max-device-width: 768px) {
   .large {
     height: 18em;
+  }
+}
+@media (min-device-width: 1400px) {
+  .large {
+    height: 21em;
   }
 }
 
