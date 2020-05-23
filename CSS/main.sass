@@ -1,0 +1,186 @@
+
+
+
+
+/* Imports */
+@import "colors"
+@import "nav"
+@import "header"
+@import "mixins"
+@import "footer"
+@import "article"
+
+html
+  overflow-x: hidden
+body
+  overflow-x: hidden
+  font-size: 1em
+  +xs
+    font-size: 1.5em
+  +sm
+    font-size: 1.5em
+
+.main
+  overflow-x: hidden
+  max-width: 95%
+  margin: auto
+
+.main span
+  font-family: $first-font
+  text-align: right
+
+
+#date
+  text-align: right
+  color: $font-color
+  margin-bottom: 0.6em
+  +xs
+    display: none
+  +sm
+    display: none
+
+
+.category-title
+  background-color: #dddddd
+  font-family: $first-font
+  font-size: 1.5em
+  padding-left: 0.5em
+  color: $font-color
+  margin-bottom: 0.5em
+  +xs
+    font-size: 2em
+
+
+.category-image
+  margin: auto
+  margin-bottom: 1em
+  +xs
+    display: none
+  +sm
+    display: none
+
+.row
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  +xs
+    justify-content: space-between
+    flex-wrap: wrap
+
+  .category-title
+    margin-right: 1%
+
+.main-part
+  flex: 0 0 90%
+  +xs
+    flex: 0 0 100%
+
+.sidebar
+  flex: 0 0 10%
+  height: 100%
+
+  +xs
+    display: none
+
+  img
+    height: 21.5em
+    margin-bottom: 6em
+    width: 100%
+    +xs
+      margin-bottom: 0
+    +sm
+      margin-bottom: 1em
+
+    +md
+      height: 23.5em
+    +lg
+      height: 23.8em
+
+    &:nth-of-type(2)
+      height: 32em
+
+      +sm
+        height: 26em
+
+
+.polaroid
+  width: 31%
+  height: 10em
+  position: relative
+  display: flex
+  margin-right: 2%
+  margin-bottom: 2%
+  overflow: hidden
+  +xs
+    height: 14em
+    width: 45%
+    margin: auto
+    margin-bottom: 4%
+  +sm
+    height: 9em
+  +md
+    height: 10em
+  +lg
+    height: 10em
+  +xl
+    height: 12em
+
+  .text-container
+    background-color: $font-color
+    font-family: $first-font
+    color: #dddddd
+    font-size: 1em
+    height: 3.5em
+    font-weight: bold
+    padding-left: 0.3em
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    bottom: 0
+    padding-bottom: 0.2em
+    padding-top: 0.3em
+    +xs
+      font-size: 1.1em
+    +sm
+      font-size: 0.8em
+    +md
+      font-size: 0.9em
+    +lg
+      font-size: 1.1em
+
+
+  img
+    max-width: 100%
+    position: absolute
+    top: -0.5em
+
+.large
+    width: 47.5%
+    +xs
+      height: 14em
+      width: 45%
+      margin: auto
+      margin-bottom: 4%
+    +sm
+      height: 13em
+    +md
+      height: 15em
+    +lg
+      height: 15em
+    +xl
+      height: 18em
+
+.polaroid
+  &:nth-of-type(3)
+      margin-right: 1%
+
+.polaroid
+  &:nth-of-type(4)
+    display: none
+    +xs
+      display: inline-block
+      img
+        width: 100%
+        height: 15em

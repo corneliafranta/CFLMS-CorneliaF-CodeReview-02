@@ -1,0 +1,28 @@
+/* Colors */
+/* Font */
+/* Imports */
+nav {
+  height: 3em;
+  background-color: #1a1a1a;
+  margin-bottom: 0.5em; }
+  @media (max-device-width: 768px) {
+    nav {
+      text-align: center; } }
+  nav ul {
+    margin-block-start: 0;
+    padding-top: 0.3em;
+    margin-top: 0; }
+  nav li {
+    list-style: none;
+    display: inline;
+    margin-top: 1em; }
+    nav li a {
+      color: white;
+      text-decoration: none;
+      font-family: "Noto Sans TC", sans-serif;
+      font-size: 1.5em;
+      position: relative;
+      margin-right: 1em;
+      margin-top: 1em; }
+
+/*# sourceMappingURL=nav.css.map */
